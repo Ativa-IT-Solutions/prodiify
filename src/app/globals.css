@@ -1,26 +1,170 @@
 @import "tailwindcss";
 
 :root {
+  --blue: #418fd1;
+  --blue-deep: #2e6fb0;
+  --green: #10b34b;
+  --green-deep: #0c9640;
+  --ink: #0e1b2a;
+  --ink-2: #3a4a5c;
+  --muted: #6b7b8c;
+  --line: #e6ecf2;
+  --line-2: #eef3f7;
   --background: #ffffff;
-  --foreground: #171717;
+  --bg-soft: #f5f9fc;
+  --bg-mint: #eef9f1;
+  --grad: linear-gradient(100deg, var(--blue) 0%, var(--green) 100%);
+  --grad-soft: linear-gradient(120deg, #eaf3fb 0%, #ebf8f0 100%);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --shadow-sm: 0 1px 2px rgba(14, 27, 42, 0.05), 0 4px 14px rgba(14, 27, 42, 0.05);
+  --shadow-md: 0 8px 30px rgba(14, 27, 42, 0.08), 0 2px 8px rgba(14, 27, 42, 0.04);
+  --shadow-lg: 0 24px 60px rgba(28, 86, 140, 0.16), 0 6px 18px rgba(14, 27, 42, 0.06);
 }
 
 @theme inline {
+  --color-blue: var(--blue);
+  --color-blue-deep: var(--blue-deep);
+  --color-green: var(--green);
+  --color-green-deep: var(--green-deep);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg-soft: var(--bg-soft);
+  --color-bg-mint: var(--bg-mint);
+  --radius-lg: var(--radius);
+  --radius-md: var(--radius-sm);
+  --font-display: var(--font-space-grotesk);
+  --font-body: var(--font-inter);
+  --font-mono: var(--font-space-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+}
+
+.wrap {
+  width: min(1160px, 92vw);
+  margin-inline: auto;
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(65, 143, 209, 0.22);
+}
+
+.grad-text {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.shadow-card-sm {
+  box-shadow: var(--shadow-sm);
+}
+.shadow-card-md {
+  box-shadow: var(--shadow-md);
+}
+.shadow-card-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+/* ---------- Signature: self-writing search result ---------- */
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+}
+.spark {
+  animation: pulse-dot 1.4s ease-in-out infinite;
+}
+
+@keyframes typing {
+  to {
+    width: 100%;
+  }
+}
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+.serp-title {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--blue);
+  width: 0;
+  animation:
+    typing 3.2s steps(46, end) 0.5s forwards,
+    caret 0.7s step-end infinite;
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.serp-desc {
+  opacity: 0;
+  transform: translateY(6px);
+  animation: reveal 0.6s ease 3.7s forwards;
+}
+.serp-tags {
+  opacity: 0;
+  animation: reveal 0.6s ease 4.2s forwards;
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+.float-card {
+  animation: floaty 6s ease-in-out infinite;
+}
+.float-card.delay {
+  animation-delay: 0.8s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition: none !important;
+  }
+  .serp-title {
+    width: 100%;
+    border-right: none;
+  }
+  .serp-desc,
+  .serp-tags {
+    opacity: 1;
+    transform: none;
+  }
 }
