@@ -26,7 +26,8 @@ export default async function BlogIndexPage({ searchParams }: PageProps<"/blog">
     const result = await getPosts({ first: PAGE_SIZE, after: cursor });
     posts = result.posts;
     pageInfo = result.pageInfo;
-  } catch {
+  } catch (error) {
+    console.error("[blog] failed to load posts:", error);
     loadError = true;
   }
 
