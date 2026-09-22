@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter, Space_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -24,6 +25,9 @@ export const metadata: Metadata = {
   title: "Prodiify — AI SEO content for your Shopify products",
   description:
     "Prodiify uses AI to generate SEO-optimized product titles, descriptions, tags, and images so your Shopify store ranks on Google, Shopify search, and AI engines like ChatGPT, Gemini, and Perplexity.",
+  verification: {
+    google: "OJZFSE1469JvvWTFIj-eGUlamv0qG_gEe6NjcMc44FY",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -32,7 +36,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${spaceGrotesk.variable} ${inter.variable} ${spaceMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-13EFNQ69RF" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-13EFNQ69RF');
+          `}
+        </Script>
+      </body>
     </html>
   );
 }
