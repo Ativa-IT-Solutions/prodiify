@@ -62,9 +62,6 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
     <>
       <Nav />
       <main className="wrap py-16 max-w-[760px]">
-        <Link href="/blog" className="text-[14px] font-medium text-muted hover:text-blue-deep transition-colors">
-          ← All posts
-        </Link>
 
         <h1 className="font-display font-bold text-[clamp(1.75rem,4vw,2.5rem)] leading-[1.15] tracking-[-0.02em] mt-4 mb-3.5">
           {post.title}
@@ -72,7 +69,7 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
 
         <div className="flex items-center gap-3 flex-wrap text-[13.5px] text-muted mb-8">
           <span className="font-mono">{formatPostDate(post.date)}</span>
-          {post.author && <span>By {post.author.name}</span>}
+          {/* {post.author && <span>By {post.author.name}</span>} */}
           {post.categories.map((category) => (
             <span
               key={category.slug}
