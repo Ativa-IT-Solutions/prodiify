@@ -28,6 +28,9 @@ export const metadata: Metadata = {
   verification: {
     google: "OJZFSE1469JvvWTFIj-eGUlamv0qG_gEe6NjcMc44FY",
   },
+  other: {
+    "p:domain_verify": "f23ac277c472930c55d8ed0beeeb1a22",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
