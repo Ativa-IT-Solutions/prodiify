@@ -13,6 +13,7 @@ export async function POST(request: NextRequest) {
 
   revalidateTag("wordpress-posts", "max");
   revalidatePath("/blog");
+  revalidatePath("/sitemap.xml");
   if (slug) {
     revalidatePath(`/blog/${slug}`);
   }

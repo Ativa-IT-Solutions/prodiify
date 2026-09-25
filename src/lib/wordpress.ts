@@ -209,6 +209,40 @@ export async function getAllPostSlugs(): Promise<string[]> {
   return data.posts.nodes.map((node) => node.slug);
 }
 
+export async function getAllPostsForSitemap(): Promise<{ slug: string; modified: string }[]> {
+  const query = `
+    query GetAllPostsForSitemap($after: String) {
+      posts(first: 100, after: $after, where: { status: PUBLISH }) {
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
+        nodes {
+          slug
+          modifiedGmt
+        }
+      }
+    }
+  `;
+
+  const posts: { slug: string; modified: string }[] = [];
+  let after: string | null = null;
+
+  do {
+    const data: {
+      posts: {
+        pageInfo: { hasNextPage: boolean; endCursor: string | null };
+        nodes: { slug: string; modifiedGmt: string }[];
+      };
+    } = await wpFetch(query, { after }, 300);
+
+    posts.push(...data.posts.nodes.map((node) => ({ slug: node.slug, modified: `${node.modifiedGmt}Z` })));
+    after = data.posts.pageInfo.hasNextPage ? data.posts.pageInfo.endCursor : null;
+  } while (after);
+
+  return posts;
+}
+
 export function stripHtml(html: string): string {
   return html
     .replace(/<[^>]*>/g, " ")
