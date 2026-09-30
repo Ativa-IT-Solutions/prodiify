@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const productLinks = [
-  { href: "#features", label: "Features" },
-  { href: "#how", label: "How it works" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#discovery", label: "AI search" },
+  { href: "/#features", label: "Features" },
+  { href: "/#how", label: "How it works" },
+  { href: "/#pricing", label: "Pricing" },
+  { href: "/#discovery", label: "AI search" },
   { href: "/blog", label: "Blog" },
 ];
 

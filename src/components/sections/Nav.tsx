@@ -8,10 +8,10 @@ import { ArrowRightIcon, CloseIcon, MenuIcon } from "../ui/Icons";
 const SHOPIFY_URL = "https://apps.shopify.com/prodiify";
 
 const links = [
-  { href: "#features", label: "Features" },
-  { href: "#how", label: "How it works" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#discovery", label: "AI search" },
+  { href: "/#features", label: "Features" },
+  { href: "/#how", label: "How it works" },
+  { href: "/#pricing", label: "Pricing" },
+  { href: "/#discovery", label: "AI search" },
   { href: "/blog", label: "Blog" },
 ];
 
