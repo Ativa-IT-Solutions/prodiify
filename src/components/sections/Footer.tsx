@@ -61,7 +61,7 @@ export function Footer() {
       <div className="wrap">
         <div className="flex justify-between gap-10 flex-wrap mb-[38px]">
           <div className="max-w-[300px]">
-            <a href="#top" className="flex items-center gap-2.5 font-display font-bold text-[21px] tracking-[-0.01em]">
+            <a href="/" className="flex items-center gap-2.5 font-display font-bold text-[21px] tracking-[-0.01em]">
               <span className="w-[38px] h-[38px] rounded-[10px] bg-white grid place-items-center overflow-hidden p-[7px] shadow-[0_4px_12px_rgba(46,111,176,0.18)]">
                 <Image src="/logo.webp" alt="Prodiify" width={34} height={42} className="w-full h-full object-contain" />
               </span>

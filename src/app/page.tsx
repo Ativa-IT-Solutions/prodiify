@@ -5,6 +5,7 @@ import { FeaturesBento } from "@/components/sections/FeaturesBento";
 import { ShowcaseRows } from "@/components/sections/ShowcaseRows";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { Pricing } from "@/components/sections/Pricing";
+import { YouTubeVideos } from "@/components/sections/YouTubeVideos";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { Footer } from "@/components/sections/Footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <ShowcaseRows />
         <HowItWorks />
         <Pricing />
+        <YouTubeVideos />
         <CtaBand />
       </main>
       <Footer />

@@ -21,7 +21,7 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-50 bg-white/82 backdrop-blur-md backdrop-saturate-150 border-b border-line-2">
       <div className="wrap flex items-center justify-between h-[70px]">
-        <a href="#top" className="flex items-center gap-2.5 font-display font-bold text-[21px] tracking-[-0.01em]">
+        <a href="/" className="flex items-center gap-2.5 font-display font-bold text-[21px] tracking-[-0.01em]">
           <span className="w-[38px] h-[38px] rounded-[10px] bg-white grid place-items-center overflow-hidden p-[7px] shadow-[0_4px_12px_rgba(46,111,176,0.18)]">
             <Image src="/logo.webp" alt="Prodiify" width={34} height={42} className="w-full h-full object-contain" priority />
           </span>
