@@ -68,7 +68,7 @@ export function Footer() {
               Prodiify
             </a>
             <p className="text-sm text-muted mt-3.5">
-              AI-generated SEO titles, descriptions, tags, and images for Shopify — so your products get discovered
+              AI-generated A+ Content (MediaXL) SEO titles, descriptions, tags, and images for Shopify — so your products get discovered
               on Google, Shopify, and AI search.
             </p>
             <div className="flex gap-3 mt-4">
