@@ -6,7 +6,7 @@ import { VideoGallery } from "./VideoGallery";
 export async function YouTubeVideos() {
   const videos = await getChannelVideos(6);
 
-  // Nothing to show (misconfigured channel or feed unavailable) — skip the section.
+  // Nothing to show (misconfigured channel or feed unavailable), skip the section.
   if (videos.length === 0) return null;
 
   const channelUrl = youtubeChannelUrl();
@@ -18,7 +18,7 @@ export async function YouTubeVideos() {
           <SectionHead
             eyebrow="From our channel"
             title="Watch Prodiify in action"
-            description="Product walkthroughs, tips and updates — fresh from our YouTube channel, always up to date."
+            description="Product walkthroughs, tips and updates, fresh from our YouTube channel, always up to date."
           />
           {channelUrl && (
             <div className="md:mb-12">

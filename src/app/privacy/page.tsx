@@ -3,7 +3,7 @@ import { Nav } from "@/components/sections/Nav";
 import { Footer } from "@/components/sections/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Prodiify",
+  title: "Privacy Policy | Prodiify",
   description:
     "How Prodiify, operated by Ativa IT Solutions and Business Consulting, collects, uses, and protects your data.",
 };
@@ -59,10 +59,10 @@ const sections = [
       <>
         <p>We use the following third-party services to power Prodiify:</p>
         <ul>
-          <li>Shopify API — Product and store management</li>
-          <li>OpenAI / Anthropic — AI text generation</li>
-          <li>Replicate — AI image generation</li>
-          <li>MongoDB Atlas — Secure data storage</li>
+          <li>Shopify API: Product and store management</li>
+          <li>OpenAI / Anthropic: AI text generation</li>
+          <li>Replicate: AI image generation</li>
+          <li>MongoDB Atlas: Secure data storage</li>
         </ul>
       </>
     ),

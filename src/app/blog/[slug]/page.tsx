@@ -22,13 +22,13 @@ export async function generateMetadata({ params }: PageProps<"/blog/[slug]">): P
   const post = await getPostBySlug(slug).catch(() => null);
 
   if (!post) {
-    return { title: "Post not found — Prodiify" };
+    return { title: "Post not found | Prodiify" };
   }
 
   const description = stripHtml(post.excerpt).slice(0, 160);
 
   return {
-    title: `${post.title} — Prodiify Blog`,
+    title: `${post.title} | Prodiify Blog`,
     description,
     openGraph: {
       title: post.title,

@@ -1,5 +1,5 @@
 // Fetches a YouTube channel's latest uploads from its public RSS feed.
-// No API key required — YouTube exposes an Atom feed per channel that always
+// No API key required. YouTube exposes an Atom feed per channel that always
 // reflects the newest uploads, so the section auto-updates on each revalidate.
 
 const YOUTUBE_CHANNEL_ID = process.env.YOUTUBE_CHANNEL_ID || "UCEyZMBLNHVrhZC_svyBIOwg";

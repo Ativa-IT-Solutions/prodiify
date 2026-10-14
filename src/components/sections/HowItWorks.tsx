@@ -4,7 +4,7 @@ const steps = [
   {
     num: "01",
     title: "Connect your store",
-    body: "Install Prodiify from the Shopify App Store. It syncs with your product catalog instantly — no theme edits.",
+    body: "Install Prodiify from the Shopify App Store. It syncs with your product catalog instantly, no theme edits.",
   },
   {
     num: "02",

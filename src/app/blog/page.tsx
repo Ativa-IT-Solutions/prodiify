@@ -7,7 +7,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { getPosts, stripHtml, formatPostDate } from "@/lib/wordpress";
 
 export const metadata: Metadata = {
-  title: "Blog — Prodiify",
+  title: "Blog | Prodiify",
   description:
     "SEO, AI search, and ecommerce merchandising tips for Shopify sellers, from the team behind Prodiify.",
 };
@@ -52,7 +52,7 @@ export default async function BlogIndexPage({ searchParams }: PageProps<"/blog">
 
         {!loadError && posts.length === 0 && (
           <p className="text-[15px] text-muted border border-line-2 rounded-xl bg-bg-soft p-6">
-            No posts published yet — check back soon.
+            No posts published yet. Check back soon.
           </p>
         )}
 

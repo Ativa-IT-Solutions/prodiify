@@ -6,9 +6,9 @@ const rows = [
   {
     eyebrow: "One dashboard",
     title: "Run your whole catalog from a single screen.",
-    body: "Prodiify connects directly to your Shopify store and shows every product's optimization status at a glance — so you always know what's ranking and what needs work.",
+    body: "Prodiify connects directly to your Shopify store and shows every product's optimization status at a glance, so you always know what's ranking and what needs work.",
     bullets: [
-      "Live inside Shopify admin — nothing to install on your theme",
+      "Live inside Shopify admin, nothing to install on your theme",
       "Bulk-optimize hundreds of products in one pass",
       "Track text and image credits as you go",
     ],
@@ -21,7 +21,7 @@ const rows = [
   {
     eyebrow: "AI copy that converts",
     title: "Titles, descriptions, and tags in your store's voice.",
-    body: "Give Prodiify a product and it writes the whole listing — an SEO title, a persuasive description, meta tags, and alt text — all optimized for the keywords shoppers actually search.",
+    body: "Give Prodiify a product and it writes the whole listing: an SEO title, a persuasive description, meta tags, and alt text, all optimized for the keywords shoppers actually search.",
     bullets: [
       "Keyword-aware titles and meta descriptions",
       "Structured for Google and Shopify search ranking",
@@ -36,7 +36,7 @@ const rows = [
   {
     eyebrow: "AI imagery",
     title: "Studio-quality product images, generated on demand.",
-    body: "Fill gaps in your catalog with clean, consistent product visuals. Better images mean better listings — and higher conversion on every page.",
+    body: "Fill gaps in your catalog with clean, consistent product visuals. Better images mean better listings, and higher conversion on every page.",
     bullets: [
       "Generate on-brand imagery in a click",
       "Descriptive alt text added automatically",
@@ -51,7 +51,7 @@ const rows = [
   {
     eyebrow: "Prodiify MediaXL",
     title: "Build A+ product content, no developer needed.",
-    body: "Turn plain product pages into rich, story-driven content using ready-made blocks — drag, drop, and publish visuals that sell, right inside Shopify.",
+    body: "Turn plain product pages into rich, story-driven content using ready-made blocks: drag, drop, and publish visuals that sell, right inside Shopify.",
     bullets: [
       "Six ready-made blocks: Image + Text, Gallery, Feature List, Banner/Hero, Video, and Carousel",
       "Drag, drop, and publish rich content that sells, right inside Shopify",

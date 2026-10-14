@@ -30,7 +30,7 @@ export function Hero() {
             Product listings that <span className="grad-text">write themselves</span> and rank.
           </h1>
           <p className="text-lg text-ink-2 max-w-[34ch] mb-[30px]">
-            Prodiify uses AI to generate SEO-ready titles, descriptions, tags, and images for your whole catalog —
+            Prodiify uses AI to generate SEO-ready titles, descriptions, tags, and images for your whole catalog,
             so shoppers find you on Google, Shopify search, and AI engines.
           </p>
           <div className="flex items-center gap-3.5 flex-wrap mb-[22px]">
@@ -80,11 +80,11 @@ export function Hero() {
               yourstore.com › products › weekender
             </div>
             <div className="serp-title font-display font-semibold text-xl text-[#1a5fb4] leading-[1.25] mb-2">
-              Handcrafted Full-Grain Leather Weekender Bag — Unisex Travel Duffel
+              Handcrafted Full-Grain Leather Weekender Bag, Unisex Travel Duffel
             </div>
             <div className="serp-desc text-[14.5px] text-ink-2 leading-[1.5]">
               Durable full-grain leather weekender with a padded shoulder strap, shoe compartment, and
-              water-resistant lining. Ships free — handmade for weekend trips and carry-on travel.
+              water-resistant lining. Ships free, handmade for weekend trips and carry-on travel.
             </div>
             <div className="serp-tags flex gap-2 flex-wrap mt-4">
               <span className="font-mono text-[11.5px] text-blue-deep bg-bg-soft border border-[#DCEAF6] rounded-[7px] px-2.5 py-1">

@@ -14,7 +14,7 @@ const cards = [
     green: true,
     icon: <ImageIcon />,
     title: "AI product images",
-    body: "Create clean, on-brand product visuals that lift listing quality and conversions — no photographer or designer required.",
+    body: "Create clean, on-brand product visuals that lift listing quality and conversions, no photographer or designer required.",
   },
   {
     span: "md:col-span-2",
@@ -42,7 +42,7 @@ const cards = [
     green: true,
     icon: <ShieldCheckIcon />,
     title: "Alt text & meta tags",
-    body: "Every image gets descriptive alt text and every page gets clean meta tags — the details search engines actually read.",
+    body: "Every image gets descriptive alt text and every page gets clean meta tags, the details search engines actually read.",
   },
 ];
 
@@ -53,7 +53,7 @@ export function FeaturesBento() {
         <SectionHead
           center
           eyebrow="What Prodiify does"
-          title="Everything your listings need to rank — in one app."
+          title="Everything your listings need to rank, in one app."
           description="Skip the copywriting, the meta-tag guesswork, and the design tools. Prodiify turns thin product pages into search-ready listings automatically."
         />
 
@@ -70,12 +70,12 @@ export function FeaturesBento() {
             </h3>
             <p className="text-[14.5px] text-ink-2">
               Generate keyword-rich product titles, meta descriptions, and tags that are built to rank on Google
-              and Shopify search — written in your store&apos;s voice.
+              and Shopify search, written in your store&apos;s voice.
             </p>
             <div className="mt-5 bg-white border border-line rounded-xl px-4 py-3.5 shadow-card-sm">
               <div className="font-mono text-[11px] text-green-deep mb-1">yourstore.com › products</div>
               <div className="font-display font-semibold text-[15px] text-[#1a5fb4] mb-1">
-                Organic Cotton Oversized Hoodie — Unisex, Pre-Shrunk
+                Organic Cotton Oversized Hoodie, Unisex, Pre-Shrunk
               </div>
               <div className="text-[12.5px] text-muted leading-[1.45]">
                 Soft, breathable organic cotton hoodie with a relaxed fit and double-lined hood. Ethically made and

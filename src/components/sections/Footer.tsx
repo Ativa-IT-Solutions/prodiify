@@ -17,7 +17,7 @@ const getStartedLinks = [
 const companyLinks = [
   {
     href: "https://apps.shopify.com/partners/ativa-it-solutions-and-business-consulti",
-    label: "ATIVA IT Solutions",
+    label: "Ativa IT Solutions",
   },
   { href: "https://apps.shopify.com/prodiify", label: "Support" },
 ];
@@ -68,7 +68,7 @@ export function Footer() {
               Prodiify
             </a>
             <p className="text-sm text-muted mt-3.5">
-              AI-generated A+ Content (MediaXL) SEO titles, descriptions, tags, and images for Shopify — so your products get discovered
+              AI-generated A+ Content (MediaXL) SEO titles, descriptions, tags, and images for Shopify, so your products get discovered
               on Google, Shopify, and AI search.
             </p>
             <div className="flex gap-3 mt-4">
@@ -95,7 +95,7 @@ export function Footer() {
           </div>
         </div>
         <div className="flex justify-between gap-5 flex-wrap items-center pt-6 border-t border-line-2 text-[13px] text-muted">
-          <span>© 2026 Prodiify by ATIVA IT Solutions &amp; Business Consulting. All rights reserved.</span>
+          <span>© 2026 Prodiify by Ativa IT Solutions &amp; Business Consulting. All rights reserved.</span>
           <span>Built for the Shopify App Store</span>
         </div>
       </div>

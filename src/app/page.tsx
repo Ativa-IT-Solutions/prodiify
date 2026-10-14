@@ -6,6 +6,7 @@ import { ShowcaseRows } from "@/components/sections/ShowcaseRows";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { Pricing } from "@/components/sections/Pricing";
 import { YouTubeVideos } from "@/components/sections/YouTubeVideos";
+import { About } from "@/components/sections/About";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { Footer } from "@/components/sections/Footer";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <HowItWorks />
         <Pricing />
         <YouTubeVideos />
+        <About />
         <CtaBand />
       </main>
       <Footer />

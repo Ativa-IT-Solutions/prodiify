@@ -22,7 +22,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Prodiify — AI SEO content for your Shopify products",
+  title: "Prodiify | AI SEO content for your Shopify products",
   description:
     "Prodiify uses AI to generate SEO-optimized product titles, descriptions, tags, and images so your Shopify store ranks on Google, Shopify search, and AI engines like ChatGPT, Gemini, and Perplexity.",
   verification: {
