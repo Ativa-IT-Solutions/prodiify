@@ -51,16 +51,16 @@ const rows = [
   {
     eyebrow: "Prodiify MediaXL",
     title: "Build A+ product content, no developer needed.",
-    body: "Turn plain product pages into rich, story-driven content using ready-made blocks: drag, drop, and publish visuals that sell, right inside Shopify.",
+    body: "Turn plain product pages into rich, story-driven content using ready-made blocks: build and publish visuals that sell, right inside Shopify.",
     bullets: [
       "Six ready-made blocks: Image + Text, Gallery, Feature List, Banner/Hero, Video, and Carousel",
-      "Drag, drop, and publish rich content that sells, right inside Shopify",
+      "Build and publish rich content that sells, right inside Shopify",
       "Fully responsive on every device, straight out of the box",
     ],
     address: "prodiify · MediaXL builder",
     image:
       "https://cdn.shopify.com/app-store/listing_images/184b4b0a54e38d25bc6e88fc6d5ccf97/desktop_screenshot/CJPkka309ZYDEAE=.jpeg?height=1800&quality=90&width=3200",
-    alt: "Prodiify MediaXL A+ content builder with drag-and-drop blocks for Shopify product pages",
+    alt: "Prodiify MediaXL A+ content builder with ready-made blocks for Shopify product pages",
     flip: true,
   },
 ];

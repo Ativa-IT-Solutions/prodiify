@@ -9,6 +9,7 @@ const SHOPIFY_URL = "https://apps.shopify.com/prodiify";
 
 const links = [
   { href: "/#features", label: "Features" },
+  { href: "/a-plus-content", label: "A+ Content" },
   { href: "/#how", label: "How it works" },
   { href: "/#pricing", label: "Pricing" },
   { href: "/#discovery", label: "AI search" },

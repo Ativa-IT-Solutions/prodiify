@@ -35,7 +35,7 @@ const cards = [
     green: false,
     icon: <LayersIcon />,
     title: "A+ content, no code",
-    body: "Build rich, drag-and-drop A+ product content without touching a theme file or hiring a developer.",
+    body: "Build rich A+ product content without touching a theme file or hiring a developer.",
   },
   {
     span: "md:col-span-2",
