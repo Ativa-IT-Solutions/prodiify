@@ -10,9 +10,9 @@ import { ArrowRightIcon, CheckIcon } from "@/components/ui/Icons";
 const SHOPIFY_URL = "https://apps.shopify.com/prodiify";
 
 export const metadata: Metadata = {
-  title: "A+ Content for Shopify (MediaXL) | Prodiify",
+  title: "A+ Content for Shopify: AI Product Page Builder | Prodiify",
   description:
-    "Prodiify MediaXL gives your Shopify store the same rich, story-driven product pages that Amazon calls A+ Content and Walmart calls Rich Media — built from ready-made blocks, no developer and no theme edits.",
+    "Create Amazon-style A+ Content for Shopify product pages with Prodiify MediaXL. Build rich product pages using images, galleries, videos and feature blocks. No coding needed.",
   alternates: { canonical: "/a-plus-content" },
 };
 
